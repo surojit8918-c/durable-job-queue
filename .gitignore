@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing, linting, and profiling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Logs and dumps
+*.log
+*.dump
+*.sql
+*.tar
+*.gz
+
+# Environment variables (never ignore .env.example)
+.env
+.env.local
+.env.*
+!.env.example
+
+# Test & benchmark state artifacts
+.mock_partner_*.json
+.*_state.json
+*.tmp
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system
+Thumbs.db
+Desktop.ini
+.DS_Store
