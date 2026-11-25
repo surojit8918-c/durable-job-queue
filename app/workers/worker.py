@@ -8,6 +8,8 @@ from typing import Any
 
 from sqlalchemy.orm import Session, sessionmaker
 
+# Import handlers to register their job types
+import app.handlers.partner_api  # noqa: F401
 from app.core.config import settings
 from app.core.logging import logger
 from app.db.session import engine

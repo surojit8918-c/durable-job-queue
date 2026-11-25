@@ -252,8 +252,9 @@ class MockPartnerAdapter:
 
 
 # Global adapter instance for test injection
-mock_partner = MockPartnerAdapter()
-
+mock_partner = MockPartnerAdapter(
+    latency_seconds=float(os.environ.get("MOCK_PARTNER_LATENCY_SECONDS", "0.0"))
+)
 
 @register_handler("partner_api_call")
 def handle_partner_api_call(payload: dict[str, Any]) -> dict[str, Any]:

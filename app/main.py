@@ -5,6 +5,8 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 
+# Import handlers to register their job types
+import app.handlers.partner_api  # noqa: F401
 from app.api.routes.jobs import router as jobs_router
 from app.api.routes.stats import router as stats_router
 from app.core.config import settings
